@@ -18,12 +18,10 @@ spec:
     spec: 
       containers:
         - name: frontend
-          image: 663880399834.dkr.ecr.ap-south-1.amazonaws.com/poc-ecr-frontend:20250810-073500
+          image: biswa9937/frontend-app
           imagePullPolicy: Always
           ports:
           - containerPort: 3000
-      imagePullSecrets:
-        - name: ecr-secret
         # env:
         # - name: REACT_APP_API_BASE_URL
         #   value: "http://<your-domain-name>/backend"
